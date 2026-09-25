@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DETOX RENCOENG — Minuman Herbal Alami">
+  <title>DETOX RENCOENG — Minuman Herbal Alami</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#beranda">
+      <span class="brand-icon">🍃</span>
+      <span><b data-cms="brand">DETOX RENCOENG</b><small>HERBAL ALAMI</small></span>
+    </a>
+    <nav>
+      <a href="#beranda">Beranda</a><a href="#produk">Produk</a><a href="#manfaat">Manfaat</a>
+      <a href="#cara-seduh">Cara Seduh</a><a href="#pesan">Pesan</a>
+    </nav>
+    <a class="seller" href="admin.html">Penjual</a>
+  </div>
+</header>
+
+<main>
+<section id="beranda" class="hero section-soft">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">✦ Minuman Herbal Alami</span>
+      <h1 data-cms="heroTitle">DETOX RENCOENG</h1>
+      <p class="lead" data-cms="heroText">Nikmati kesegaran dan khasiat alami ramuan herbal pilihan dari kunyit, jahe, sereh, dan lengkuas — diolah secara tradisional untuk membantu detoksifikasi dan menjaga kebugaran tubuh Anda.</p>
+      <div class="actions"><a class="btn primary" href="#pesan">Pesan Sekarang →</a><a class="btn" href="#produk">Lihat Varian</a></div>
+      <div class="facts"><span>🍃 4 bahan alami utama</span><span>✓ Rp 20.000 / isi 15</span></div>
+    </div>
+    <div class="hero-media">
+      <img data-cms-img="heroImage" alt="Produk DETOX RENCOENG" src="images/hero.svg">
+      <div class="price-float"><strong>Rp 20.000</strong><small>per kemasan · isi 15</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="bahan" class="section white">
+  <div class="container">
+    <div class="center intro"><span class="eyebrow">Ramuan Pilihan</span><h2>Empat Bahan Alami</h2><p>Setiap sachet DETOX RENCOENG meracik empat empon-empon utama yang saling melengkapi untuk kebugaran tubuh.</p></div>
+    <div class="grid4" id="ingredients"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="media-card"><img data-cms-img="flatlayImage" src="images/flatlay.svg" alt="Bahan herbal"></div>
+    <div><span class="eyebrow">Kenapa DETOX RENCOENG</span><h2>Keunggulan Produk Kami</h2><div class="adv-grid" id="advantages"></div></div>
+  </div>
+</section>
+
+<section id="manfaat" class="section tinted">
+  <div class="container split">
+    <div><span class="eyebrow">Khasiat Herbal</span><h2>Manfaat untuk Tubuh</h2><p>Rutin menikmati seduhan DETOX RENCOENG membantu tubuh terasa lebih ringan, hangat, dan bugar sepanjang hari.</p><ul class="benefits" id="benefits"></ul></div>
+    <div><div class="media-card"><img data-cms-img="variantsImage" src="images/variants.svg" alt="Varian produk"></div><div class="note"><b>Catatan penyimpanan:</b> simpan produk di tempat sejuk dan kering, jauh dari sinar matahari langsung, agar aroma dan khasiat rempah tetap terjaga.</div></div>
+  </div>
+</section>
+
+<section id="cara-seduh" class="section">
+  <div class="container">
+    <div class="center intro"><span class="eyebrow">Mudah Disiapkan</span><h2>Cara Seduh</h2><p>Empat langkah sederhana untuk menikmati hangatnya ramuan herbal setiap hari.</p></div>
+    <ol class="steps" id="steps"></ol>
+    <div class="tip"><b>Saran penyajian dingin:</b> seduh dengan air panas, diamkan hingga hangat, tambahkan es batu dan perasan jeruk nipis untuk sensasi segar.</div>
+  </div>
+</section>
+
+<section id="galeri" class="section white">
+  <div class="container">
+    <div class="center intro"><span class="eyebrow">Galeri</span><h2>Produk & Bahan Kami</h2></div>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<section id="produk" class="section">
+  <div class="container">
+    <div class="center intro"><span class="eyebrow">Katalog</span><h2>Pilih Varian Favorit Anda</h2><p>Tiga pilihan kemasan dengan racikan empat bahan alami yang sama. Harga Rp 20.000 per kemasan, isi 15.</p></div>
+    <div class="products" id="products"></div>
+  </div>
+</section>
+
+<section id="pesan" class="section tinted">
+  <div class="container">
+    <div class="center intro"><span class="eyebrow">Pemesanan</span><h2>Formulir Pemesanan</h2><p>Isi data pengiriman Anda. Setelah pesanan dikirim, penjual dapat menerima rincian pesanan melalui WhatsApp.</p></div>
+    <div class="order-grid">
+      <form class="order-form" id="orderForm">
+        <div class="two"><label>Nama Lengkap<input id="buyerName" required placeholder="Contoh: Siti Rahayu"></label><label>Nomor WhatsApp<input id="whatsapp" required inputmode="tel" placeholder="Contoh: 081234567890"></label></div>
+        <label>Alamat Pengiriman<textarea id="address" required placeholder="Jalan, nomor rumah, kelurahan, kecamatan, kota, kode pos"></textarea></label>
+        <div class="two"><label>Pilihan Varian<select id="variant"></select></label><label>Jumlah Paket<input id="quantity" type="number" min="1" value="1"></label></div>
+        <label>Catatan (opsional)<textarea id="note" placeholder="Contoh: tolong dikirim setelah pukul 15.00"></textarea></label>
+        <button class="btn primary full" type="submit">Kirim Pesanan</button>
+      </form>
+      <aside class="summary">
+        <h3>Ringkasan Pesanan</h3><img id="summaryImage" src="images/variants.svg" alt="Varian">
+        <div class="summary-row"><span>Varian</span><b id="sumVariant"></b></div>
+        <div class="summary-row"><span>Isi per kemasan</span><b>15 sachet</b></div>
+        <div class="summary-row"><span>Jumlah paket</span><b id="sumQty">1 paket</b></div>
+        <div class="summary-row"><span>Harga satuan</span><b id="sumPrice">Rp 20.000</b></div>
+        <div class="total"><span>Total</span><b id="sumTotal">Rp 20.000</b></div>
+        <p class="muted small">Pembayaran dan konfirmasi pengiriman dilakukan langsung bersama penjual melalui WhatsApp setelah pesanan diterima.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><div class="brand"><span class="brand-icon">🍃</span><b data-cms="brand">DETOX RENCOENG</b></div><p class="muted">Minuman herbal alami dari kunyit, jahe, sereh, dan lengkuas.</p></div>
+    <div><h3>Jelajahi</h3><a href="#produk">Katalog Produk</a><a href="#manfaat">Manfaat Kesehatan</a><a href="#cara-seduh">Cara Seduh</a><a href="admin.html">Halaman Penjual</a></div>
+    <div><h3>Hubungi Penjual</h3><a id="waLink" target="_blank">WhatsApp</a><a id="emailLink">Email</a><p id="addressText" class="muted"></p></div>
+  </div>
+  <div class="copyright">© 2026 DETOX RENCOENG. Seluruh hak cipta dilindungi.</div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
